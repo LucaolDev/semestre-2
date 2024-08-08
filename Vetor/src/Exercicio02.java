@@ -5,21 +5,18 @@ public class Exercicio02 {
 
 		Scanner in = new Scanner(System.in);
 		int[] x = new int[10];
-		int par = 0, impar = 0;
+		int par = 0;
 
 		for (int i = 0; i < x.length; i++) {
 			System.out.println("Numero --> ");
 			x[i] = in.nextInt();
 			
 			if(x[i] % 2 == 0) {
-				par += 1;
-			}else {
-				impar +=1;
+				par++;
 			}
-			
 			
 		}
 		
-		System.out.println("pares = " + par + " impares = " + impar);
+		System.out.println("pares = " + par + " impares = " + ( x.length - par));
 	}
 }
