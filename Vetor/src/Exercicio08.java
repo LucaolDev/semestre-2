@@ -7,7 +7,7 @@ public class Exercicio08 {
 		int[] x = new int[10];
 		boolean status;
 
-		for (int i = 0; i < x.length; i++) {
+		for (int i = 0; i < x.length;) {
 			x[i] = rd.nextInt(10);
 			status = false;
 			
