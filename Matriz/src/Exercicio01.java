@@ -1,47 +1,34 @@
-import java.util.Random;
-import java.util.Scanner;
-import java.util.SortedMap;
 
-import javax.naming.ldap.Rdn;
+import java.util.Scanner;
 
 public class Exercicio01 {
+
 	public static void main(String[] args) {
-
-		Scanner in = new Scanner(System.in);
-		int[][] x = new int[4][4];
-		Random rd =  new Random();
+		
+		Scanner sc = new Scanner(System.in);
+		int [][] x = new int[2][2];
 		int soma = 0;
-
-		for (int i = 0; i < x.length; i++) {
-			for (int j = 0; j < x[i].length; j++) {
-				x[i][j] = rd.nextInt();
-
+		
+		for(int i=0; i<x.length;i++) {
+			for(int j=0; j<x.length;j++) {
+				System.out.println("Valor: ");
+				x[i][j] = sc.nextInt();
 			}
 		}
+		
+	
 		System.out.println();
-		for (int i = 0; i < x.length; i++) {
-			for (int j = 0; j < x[i].length; j++) {
-				System.out.print(x[i][j] + "\t");
-				
-			}
-			System.out.println();
-		}
-		
-		for (int i = 0; i < x.length; i++) {
-			for (int j = 0; j < x.length; j++) {
-				if (i == j) {
-					soma = x[i][j];
+		for(int i = 0; i<x.length; i++) {
+			for(int j = 0; j< x.length; j++) {
+				if(x[i] == x[j]) {
+					soma += x[i][j]; 
 				}
+				System.out.print(x[i][j] + "\t");
 			}
-		}
-		System.out.println("DP: " + soma);
-		soma = 0;
-		
-		for (int i = 0; i < x.length; i++) {
-			for (int j = 0; j < x.length; j++) {
-				
+			
+			System.out.println();
 			}
+		   
+			System.out.print(soma);
 		}
-
 	}
-}

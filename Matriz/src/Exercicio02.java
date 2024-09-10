@@ -1,5 +1,3 @@
-import java.nio.file.spi.FileSystemProvider;
-import java.util.Iterator;
 import java.util.Random;
 
 public class Exercicio02 {
