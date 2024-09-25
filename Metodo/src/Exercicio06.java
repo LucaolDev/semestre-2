@@ -27,9 +27,19 @@ public class Exercicio06 {
 		}
 		
 	}
-	private Object Integer;
-	public static int maior(int[][] x) {
-		int maior = 
-		
+	public static int maior(int x[][]) {
+		int maior = Integer.MIN_VALUE;
+		System.out.println();
+		for (int i = 0; i < x.length; i++) {
+			maior = 0;
+			for (int j = 0; j < x.length; j++) {
+				if(x[i][j] > maior ) {
+					maior = x[i][j];
+					
+				}	
+			}
+			System.out.print(maior + "\t");
+		}
+		return maior;
 	}
 }
