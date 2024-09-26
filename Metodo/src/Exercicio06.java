@@ -4,9 +4,11 @@ public class Exercicio06 {
 	public static void main(String[] args) {
 
 		int x[][] = new int[3][3];
+		int maior[];
 		preencher(x);
 		exibir(x);
-		maior(x);
+		maior = maior(x);
+		exibir(maior);
 		
 	}
 
@@ -27,19 +29,25 @@ public class Exercicio06 {
 		}
 		
 	}
-	public static int maior(int x[][]) {
-		int maior = Integer.MIN_VALUE;
-		System.out.println();
+	public static int[] maior(int x[][]) {
+		int maior[] = new int [x.length];
 		for (int i = 0; i < x.length; i++) {
-			maior = 0;
+			maior[i] = Integer.MIN_VALUE ;
 			for (int j = 0; j < x.length; j++) {
-				if(x[i][j] > maior ) {
-					maior = x[i][j];
-					
-				}	
+				if (x[i][j] > maior[i]) {
+					maior[i] = x[i][j];
+				}
+
 			}
-			System.out.print(maior + "\t");
 		}
 		return maior;
+	}
+	public static void exibir(int[] x) {
+		System.out.println();
+		for (int i : x) {
+			System.out.print(i + "\t");
+
+		}
+
 	}
 }
