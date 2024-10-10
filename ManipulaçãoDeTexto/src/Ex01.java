@@ -21,8 +21,13 @@ public class Ex01 {
 
 	public static void localizarPar(String[] lista) {
 		String invertida;
-		for(String palavra : lista) {
-			invertida =  inverter(palavra);
+		for (String palavra : lista) {
+			invertida = inverter(palavra);
+			for(String word : lista) {
+				if(word.equalsIgnoreCase(invertida)) {
+					System.out.println(palavra + " --> " + invertida);
+				}
+			}
 		}
 		
 	}
