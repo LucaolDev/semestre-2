@@ -1,4 +1,5 @@
-juan;2;3;4
-juan;2;3;4
-juan;2;3;4
-juan;2;3;4
+Ruiz;2;3;1
+Alex;0;5;6
+Ana;10;10;10
+Renan;1;7;8
+Selmini;2.5;1.75;3
